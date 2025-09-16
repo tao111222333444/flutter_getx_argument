@@ -4,6 +4,7 @@ import 'package:fluttersample/pages/pages/page_1.dart';
 import 'package:fluttersample/pages/pages/page_2.dart';
 import 'package:fluttersample/pages/pages/page_3.dart';
 import 'package:fluttersample/pages/pages/page_4.dart';
+import 'package:fluttersample/pages/pages/page_5.dart';
 import 'package:fluttersample/pages/splash/splash_binding.dart';
 import 'package:fluttersample/pages/splash/splash_page.dart';
 import 'package:get/get.dart';
@@ -18,6 +19,7 @@ class RouterPages {
   static const page2 = "/page2";
   static const page3 = "/page3";
   static const page4 = "/page4";
+  static const page5 = "/page5";
   
   static final List<GetPage> pages = [
     GetPage(name: initial,
@@ -39,6 +41,9 @@ class RouterPages {
     ),
     GetPage(name: page4,
       page:()=>  Page4(),
+    ),
+    GetPage(name: page5,
+      page:()=>  Page5(),
     ),
   ];
 }

@@ -23,4 +23,8 @@ class MainLogic extends GetxController {
     Get.toNamed(RouterPages.page4,);
     toPage2();
   }
+
+  void toPage5(){
+    Get.toNamed(RouterPages.page5,arguments:{RouterArgumentKey.Argument1:"arguments 传参"} ,parameters:{RouterArgumentKey.Argument1:"parameters 传参"});
+  }
 }

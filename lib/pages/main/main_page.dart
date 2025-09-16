@@ -55,6 +55,12 @@ class MainPage extends StatelessWidget {
                     },
                     child: const Text("通过ParamManager 解决问题 page 3 的问题",style: TextStyle(color: Colors.black) ,
                     )),
+                OutlinedButton(
+                    onPressed: (){
+                      logic.toPage5();
+                    },
+                    child: const Text("同时使用arguments 和parameters 传参",style: TextStyle(color: Colors.black) ,
+                    )),
                 ],
             ),
           ),
