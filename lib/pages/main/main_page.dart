@@ -32,6 +32,12 @@ class MainPage extends StatelessWidget {
             child: Column(
               children: [
                 OutlinedButton(
+                    onPressed: (){
+                      logic.toPage();
+                    },
+                    child: const Text("直接传参",style: TextStyle(color: Colors.black) ,
+                    )),
+                OutlinedButton(
                   onPressed: (){
                     logic.toPage1();
                   },

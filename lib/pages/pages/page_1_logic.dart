@@ -1,4 +1,4 @@
-import 'package:fluttersample/common/routers/router_argument_key.dart';
+import 'package:fluttersample/common/entities/user.dart';
 import 'package:get/get.dart';
 
 class Page1Logic extends GetxController{
@@ -8,6 +8,7 @@ class Page1Logic extends GetxController{
   @override
   void onReady() {
     super.onReady();
-    argument.value = Get.arguments[RouterArgumentKey.Argument1];
+    var user = Get.arguments as User;
+    argument.value = user.toString();
   }
 }

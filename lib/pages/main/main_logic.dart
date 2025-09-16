@@ -1,3 +1,4 @@
+import 'package:fluttersample/common/entities/user.dart';
 import 'package:fluttersample/common/routers/router_argument_key.dart';
 import 'package:fluttersample/common/routers/router_pages.dart';
 import 'package:fluttersample/common/services/param_manager.dart';
@@ -6,7 +7,10 @@ import 'package:get/get.dart';
 class MainLogic extends GetxController {
 
   void toPage1(){
-    Get.toNamed(RouterPages.page1,arguments:{RouterArgumentKey.Argument1:"arguments 传参"} );
+    Get.toNamed(RouterPages.page1,arguments:User(name:"arguments 传参",age: 21));
+  }
+  void toPage(){
+    Get.toNamed(RouterPages.page2+"?${RouterArgumentKey.Argument1}=直接 传参" );
   }
   void toPage2(){
     Get.toNamed(RouterPages.page2,parameters:{RouterArgumentKey.Argument1:"parameters 传参"} );
